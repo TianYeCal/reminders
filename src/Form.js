@@ -43,7 +43,7 @@ const Wrapper = styled.form`
   }
   @media (max-width: 768px) {
     input {
-      width: 15rem;
+      width: 12rem;
     }
     button {
       width: 7rem;
