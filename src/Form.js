@@ -23,10 +23,13 @@ const Form = () => {
 };
 const Wrapper = styled.form`
   text-align: center;
-  margin: 2rem 1rem;
 
+  margin: 2rem 1rem;
+  max-width: 80vw;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 1rem;
+
   input {
     padding: 1rem;
     font-size: 20px;
@@ -35,19 +38,11 @@ const Wrapper = styled.form`
     font-weight: 700;
   }
   button {
-    width: 10rem;
     background-color: pink;
     color: red;
     font-size: 20px;
     font-weight: 700;
-  }
-  @media (max-width: 768px) {
-    input {
-      width: 12rem;
-    }
-    button {
-      width: 7rem;
-    }
+    padding: 1rem;
   }
 `;
 export default Form;
