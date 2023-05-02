@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { createContext, useContext, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const defaultList = JSON.parse(localStorage.getItem("reminder")) || "";
