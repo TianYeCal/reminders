@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import Form from "./Form";
+import Results from "./Results";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <ToastContainer position="top-center" />
+      <h2>Shopping list for my beautiful beautiful wifeeeee</h2>
+      <Form />
+      <Results />
+    </Wrapper>
   );
 }
-
+const Wrapper = styled.main`
+  h2 {
+    text-align: center;
+    color: pink;
+    font-weight: 700;
+    font-size: 32px;
+  }
+`;
 export default App;
