@@ -31,6 +31,7 @@ const Wrapper = styled.form`
     padding: 1rem;
     font-size: 20px;
     color: red;
+
     font-weight: 700;
   }
   button {
@@ -39,6 +40,14 @@ const Wrapper = styled.form`
     color: red;
     font-size: 20px;
     font-weight: 700;
+  }
+  @media (max-width: 768px) {
+    input {
+      width: 15rem;
+    }
+    button {
+      width: 7rem;
+    }
   }
 `;
 export default Form;
