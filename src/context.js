@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 import { toast } from "react-toastify";
 const AppContext = createContext();
 export const AppProvider = ({ children }) => {
-  const defaultList = JSON.parse(localStorage.getItem("reminder")) || "";
+  const defaultList = JSON.parse(localStorage.getItem("reminder")) || [];
   const [newItem, setNewItem] = useState("");
   const [items, setItems] = useState(defaultList);
   const setLocalStorage = (items) => {
